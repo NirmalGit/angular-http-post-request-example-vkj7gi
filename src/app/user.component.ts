@@ -23,6 +23,8 @@ export class UserComponent {
   addUserForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     job: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required]),
   });
 
   constructor(public userService: UserService) {}

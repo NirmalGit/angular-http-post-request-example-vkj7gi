@@ -10,6 +10,14 @@
       <input matInput placeholder="Job" formControlName="job" />
     </mat-form-field>
     <br />
+    <mat-form-field>
+      <input matInput placeholder="email" formControlName="email" />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput placeholder="password" formControlName="password" />
+    </mat-form-field>
+    <br />
     <button [disabled]="!addUserForm.valid" mat-raised-button type="submit">
       Add User
     </button>
