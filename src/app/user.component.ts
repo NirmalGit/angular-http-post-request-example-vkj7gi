@@ -27,14 +27,14 @@ export class UserComponent {
 
   constructor(public userService: UserService) {}
 
-  saveUser() {
-    this.user = this.addUserForm.value;
-    this.userService.saveUser(this.user).subscribe((response: any) => {
-      console.log(response);
+  // saveUser() {
+  //   this.user = this.addUserForm.value;
+  //   this.userService.saveUser(this.user).subscribe((response: any) => {
+  //     console.log(response);
 
-      this.users.push({ name: response.name, job: response.job });
-    });
-  }
+  //     this.users.push({ name: response.name, job: response.job });
+  //   });
+  // }
 
   saveUserTyped() {
     this.user = this.addUserForm.value;
